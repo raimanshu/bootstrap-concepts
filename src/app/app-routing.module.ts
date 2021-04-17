@@ -4,9 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:'',
+    path:'views',
     loadChildren: () => import('./views/views.module').then(m => m.ViewsModule)
-  }
+  },
+  {
+    path:'', redirectTo: 'views', pathMatch: 'full'
+  },
 ];
 
 @NgModule({

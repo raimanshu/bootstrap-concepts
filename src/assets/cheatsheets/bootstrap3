@@ -1,0 +1,212 @@
+HOME
+
+
+GET STARTED
+Download bootstrap
+Add CDN
+basic structure
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p>
+</div>
+
+</body>
+</html>
+The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.
+The .container class provides a responsive fixed width container
+The .container-fluid class provides a full width container, spanning the entire width of the viewport
+
+
+GRID SYSTEM
+.col-xs- .col-sm- .col-md- .col-lg-
+xs (for phones - screens less than 768px wide)
+sm (for tablets - screens equal to or greater than 768px wide)
+md (for small laptops - screens equal to or greater than 992px wide)
+lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+Some Bootstrap grid system rules:
+Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding
+Use rows to create horizontal groups of columns
+Content should be placed within columns, and only columns may be immediate children of rows
+Predefined classes like .row and .col-sm-4 are available for quickly making grid layouts
+Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows
+Grid columns are created by specifying the number of 12 available columns you wish to span. For example, three equal columns would use three .col-sm-4
+Column widths are in percentage, so they are always fluid and sized relative to their parent element
+In the example below, we only specify the .col-md-6 class (without .col-sm-*). This means that medium and large devices will split 50%/50% - because the class scales up. However, for small devices, it will stack vertically (100% width)
+
+
+TYPOGRAPHY
+Bootstrap's global default font-size is 14px, with a line-height of 1.428.
+This is applied to the <body> element and all paragraphs (<p>).
+In addition, all <p> elements have a bottom margin that equals half their computed line-height (10px by default).
+tags - <h1>to<h6>, <small>, <mark>, <abbr>, <blockquote>, <code>, <kbd>, <pre>
+
+Class	Description	Example
+.lead	Makes a paragraph stand out	
+.small	Indicates smaller text (set to 85% of the size of the parent)	
+.text-left	Indicates left-aligned text	
+.text-center	Indicates center-aligned text	
+.text-right	Indicates right-aligned text	
+.text-justify	Indicates justified text	
+.text-nowrap	Indicates no wrap text	
+.text-lowercase	Indicates lowercased text	
+.text-uppercase	Indicates uppercased text	
+.text-capitalize	Indicates capitalized text	
+.initialism	Displays the text inside an <abbr> element in a slightly smaller font size	
+.list-unstyled	Removes the default list-style and left margin on list items (works on both <ul> and <ol>). This class only applies to immediate children list items (to remove the default list-style from any nested lists, apply this class to any nested lists as well)	
+.list-inline	Places all list items on a single line	
+.dl-horizontal	Lines up the terms (<dt>) and descriptions (<dd>) in <dl> elements side-by-side. Starts off like default <dl>s, but when the browser window expands, it will line up side-by-side	
+.pre-scrollable	Makes a <pre> element scrollable	
+
+TABLES
+
+
+IMAGES
+
+JUMBOTRONS
+
+WELLS
+- difference between well and jumbotron
+
+
+ALERTS
+- Dismissible Alerts
+To help improve accessibility for people using screen readers, you should include the aria-label="close" attribute, when creating a close button.
+&times; (×) is an HTML entity that is the preferred icon for close buttons, rather than the letter "x".
+<div class="alert alert-success alert-dismissible">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+- Alerts with Links
+<div class="alert alert-success">
+  <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+</div>
+-Animated Alerts
+
+BUTTONS
+You can use button classes on <a>, <button>, and <input> 
+Bootstrap uses the non-standard (at the time of writing) pointer-events: none to disable link buttons (those buttons created with the <a> element). Although this works in many cases, it doesn't work in all cases. Therefore, you should also use JavaScript to disable any link button functionality (or just use a <button> element if you can).
+Since we do not have any page to link it to, and we do not want to get a "404" message, we put # as the link in our examples. It should be a real URL to a specific page.
+
+BUTTON GROUPS
+Nesting Button Groups & Dropdown Menus
+Split Button Dropdowns
+Combining Dropdowns with Button Groups
+Split Dropdowns
+Justified Button Groups
+Buttons Created with <a> Elements
+Buttons Created with <button> or <input> Elements
+
+GLYPHICONS
+<span class="glyphicon glyphicon-name"></span>
+The aria-hidden="true" in the above examples is used for hiding the Glyphicon in screen readers.
+ use the aria-label attribute against the actual form control.
+ 
+BADGES / LABELS
+
+PROGRESS BARS
+Progress Bar With Label
+Colored Progress Bars
+Striped Progress Bars
+Animated Progress Bar
+Stacked Progress Bars
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    <span class="sr-only">70% Complete</span>
+  </div>
+</div>
+
+PAGINATION
+
+LIST-GROUPS
+List Group With Badges
+List Group With Linked Items
+
+
+PANNELS
+
+DROPDOWNS
+
+
+----------------------------QUACK QUACK !!!--------------------------------------------
+
+COLLAPSE
+
+TABS/PILLS
+Menus
+Tabs
+Tabs With Dropdown Menu
+Pills
+Vertical Pills
+Vertical Pills in a Row
+Pills With Dropdown Menu
+Centered Tabs and Pills
+Toggleable / Dynamic Tabs
+Toggleable / Dynamic Pills
+
+
+NAVBAR
+
+
+FORMS
+All textual <input>, <textarea>, and <select> elements with class .form-control have a width of 100%.
+Vertical form (this is default)
+Horizontal form
+Inline form
+Standard rules for all three form layouts:
+Wrap labels and form controls in <div class="form-group"> (needed for optimum spacing)
+Add class .form-control to all textual <input>, <textarea>, and <select> elements
+
+INPUTS
+ Inputs will NOT be fully styled if their type is not properly declared!
+ 
+INPUTS 2
+
+INPUT SIZING
+
+MEDIA OBJECTS
+ media objects (like images or videos) 
+ 
+CAROUSEL
+data-ride
+
+MODAl
+
+TOOLTIPS
+<a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Hover</a>
+
+POPOVER
+<a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus" data-content="Click anywhere in the document to close this popover">Click me</a>
+
+SCROLLSPY
+
+
+AFFIX
+
+
+FILTERS
+
+
+
+
+
+
+
+
+
+
+
+

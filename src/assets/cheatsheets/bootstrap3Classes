@@ -1,0 +1,82 @@
+https://bootstrapcreative.com/resources/bootstrap-3-css-classes-index/
+https://bootstrapcreative.com/resources/bootstrap-4-css-classes-index/
+https://www.quackit.com/bootstrap/bootstrap_3/tutorial/bootstrap_badges.cfm
+https://www.w3schools.com/bootstrap/bootstrap_list_groups.asp
+
+
+
+
+containers	-	container, container-fluid
+
+grid basic	-	row, col-xs, col-sm, col-md, col-xs
+
+typography	-	blockquote-reverse
+
+div 		-	thumbnail, embed-responsive, responsive-embed-16by9, responsive-embed-4by3, jumbotron, page-header, well, well-sm, well-lg , divider, clearfix, col-md-offset-*, col-md-push-*, col-md-pull-*, visible-xs
+
+text font size	-	h1,h2,h3,h4,h5,h6
+text colors	-	.text-muted, .text-primary, .text-success, .text-info, .text-warning, .text-danger
+text-alignment	-	text-left,text-center,text-right,text-justify,text-nowrap
+text transformation -  text-lowercase,text-uppercase,text-capitalize
+
+lists		-	list-unstyled, list-inline, dl-horizontal
+
+tables		-	table, table-striped, table-bordered, table-hover, table-condensed, table-responsive, active, success, info, danger, warning
+
+images		-	img-responsive, center-block, img-rounded, img-circle, img-thumbnail
+
+jumbotrons	-	jumbotron, page-header
+
+wells		-	well, well-sm, well-lg
+
+alerts		-	alert, alert-success, alert-info, alert-warning, alert-danger, alert-dismissible, alert-link, fade, in
+
+buttons	-	.btn, .btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-link, .btn-lg, .btn-sm, .btn-xs, btn-block, active, disabled
+
+button groups	-	btn-group, btn-group-lg|sm|xs, btn-group-vertical, btn-group-justified, btn-toolbar
+
+glyphicons	-	sr-only
+
+badges/labels	-	.badge, .label-default, .label-primary, .label-success, .label-info, .label-warning, .label-danger 
+
+progress bars	-	progress-bar, progress-bar-success, progress-bar-info, progress-bar-warning, progress-bar-danger, progress-bar-striped, progress, active
+
+pagination	-	pagination, active, disabled, pagination-lg, pagination-sm, breadcrumb, pager, previous, next
+
+list-groups	-	list-group, list-group-item, active, disabled, .list-group-item-success, list-group-item-info, list-group-item-warning, .list-group-item-danger, list-group-item-heading, list-group-item-text
+
+pannels	-	panel, panel-default, panel-body, panel-heading, panel-title, panel-body, panel-footer, panel-group, .panel-default, .panel-primary, .panel-success, .panel-info, .panel-warning, .panel-danger
+
+dropdowns	-	dropdown, dropdown-toggle, caret, dropdown-menu, divider, dropdown-header, disabled, active, dropdown-menu-right, dropup, 
+
+collapse	-
+
+tabs/pills	-	list-inline, nav, nav-tabs, active, nav-pills, nav-stacked, nav-justified, tab-pane, tab-content, fade, tab-pane, 
+
+navbar		-	navbar, navbar-default, navbar-header, navbar-brand, navbar-nav, navbar-inverse, navbar-right, navbar-btn, navbar-form, form-group, .input-group, .input-group-addon, navbar-text, navbar-fixed-top, navbar-fixed-bottom, 
+
+forms		-	form-group, form-control, form-inline, sr-only, form-horizontal, control-label, checkbox, checkbox-inline, radio, radio-inline, form-control-static, control-label, input-group, input-group-addon, input-group-btn, input-lg, input-sm, form-group-lg, form-group-sm, row, col-xs|sm|md|lg-1|2|3|4|5|6|7|8|9|10|11|12, help-block
+
+media objects	-	media, media-left, media-right, media-object, media-body, media-heading, media-top, media-middle, media-bottom, 
+
+modal		-	modal fade, modal-dialog, modal-content, modal-content, modal-header, close, modal-title, modal-body, modal-footer, modal-sm, modal-lg, 
+
+affix		-	affix, affix-top, affix-bottom
+carousal	-	carousel slide, carousel-indicators, carousel-inner, item, left, right, carousel-caption
+abb tag	-	initialism
+pre tag	-	pre-scrollable
+var tag	-	
+samp tag	-	
+kbd tag	-	
+code tag	-	
+blockquote tag	-	
+small tag	-	
+h* tag		-
+iframe tag	- 	embed-responsive, responsive-embed-16by9, responsive-embed-4by3, embed-responsive-item
+video tag 	-	embed-responsive, responsive-embed-16by9, responsive-embed-4by3, embed-responsive-item
+object tag 	-	embed-responsive, responsive-embed-16by9, responsive-embed-4by3, embed-responsive-item
+embed tag 	-	embed-responsive, responsive-embed-16by9, responsive-embed-4by3, embed-responsive-item	
+
+
+
+bacground	-	.bg-primary, .bg-success, .bg-info, .bg-warning, and .bg-danger
