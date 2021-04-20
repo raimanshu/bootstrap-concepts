@@ -1,4 +1,3 @@
-
 -Project structure
 BS3 or BS4
 Index component - list of component/topics in w3schools (only name), topic redirection + intro + demo + *w3 reference +
@@ -9,42 +8,45 @@ Reference - Links
 Cheatsheets - tables list, tables list based on w3 topics, custom files
 Queries
 Emmnet way to write code
+Lifecycles(ng)
+Navigation cycles(ng)
 
 <div class="container-fluid">
     <div class="jumbotron btn-group">
         <h4 class="text-uppercase">w3schools topics <small class="text-success">* - intro not created</small></h4>
-        <button class="btn btn-primary">Home*</button>
-        <button class="btn btn-primary">Get Started*</button>
-        <button class="btn btn-primary">Grid System*</button>
-        <button class="btn btn-primary">Typography*</button>
-        <button class="btn btn-primary">Tables</button>
-        <button class="btn btn-primary">Images</button>
-        <button class="btn btn-primary">Jumbotron</button>
-        <button class="btn btn-primary">Wells</button>
-        <button class="btn btn-primary">Alerts</button>
-        <button class="btn btn-primary">Button</button>
-        <button class="btn btn-primary">Button Groups</button>
-        <button class="btn btn-primary">Glyphicons*</button>
-        <button class="btn btn-primary">Badges/Labels</button>
-        <button class="btn btn-primary">Progress bars</button>
-        <button class="btn btn-primary">Pagination*</button>
-        <button class="btn btn-primary">Panel</button>
-        <button class="btn btn-primary">Dropdown</button>
-        <button class="btn btn-primary">Collapse</button>
-        <button class="btn btn-primary">Tabs/Pills</button>
-        <button class="btn btn-primary">Navbar</button>
-        <button class="btn btn-primary"><a href="#forms">Forms</a></button>
-        <button class="btn btn-primary">Input</button>
-        <button class="btn btn-primary">Input 2</button>
-        <button class="btn btn-primary">Input sizing</button>
-        <button class="btn btn-primary">Media objects</button>
-        <button class="btn btn-primary">Carousal</button>
-        <button class="btn btn-primary">Modal</button>
-        <button class="btn btn-primary">Tooltip</button>
-        <button class="btn btn-primary">Popover</button>
-        <button class="btn btn-primary">Scrollspy*</button>
-        <button class="btn btn-primary">Affix</button>
-        <button class="btn btn-primary">Filters*</button>
+        <p>Click on table to see scroling</p>
+        <button (click)="gotoSection('')" class="btn btn-primary">Home*</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Get Started*</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Grid System*</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Typography*</button>
+        <button (click)="gotoSection('tables')" class="btn btn-primary">Tables</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Images</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Jumbotron</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Wells</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Alerts</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Button</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Button Groups</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Glyphicons*</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Badges/Labels</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Progress bars</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Pagination*</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Panel</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Dropdown</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Collapse</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Tabs/Pills</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Navbar</button>
+        <button (click)="gotoSection('')" class="btn btn-primary"><a href="#forms">Forms</a></button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Input</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Input 2</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Input sizing</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Media objects</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Carousal</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Modal</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Tooltip</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Popover</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Scrollspy*</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Affix</button>
+        <button (click)="gotoSection('')" class="btn btn-primary">Filters*</button>
         <!-- <ul class="list-inline">
             <li class="bg-primary">MySQL is a database management system.</li>
             <li class="bg-primary">MySQL databases are relational.</li>
@@ -59,7 +61,7 @@ Emmnet way to write code
             <h4>Tables</h4>
         </div>
         <div class="col-sm-3 text-right">
-            <button class="btn btn-primary">Explore</button>
+            <button class="btn btn-primary"><a> Explore</a></button>
         </div>
     </div>
     <div class="panel panel-default">
@@ -720,3 +722,22 @@ Emmnet way to write code
     </div>
 </div>
 
+
+<div>
+    <div class="well" *ngFor="let item of this.dashboardData" [id]="item.id">
+        <div class="row">
+            <div class="col-sm-9">
+                <h4>{{item.topic}}</h4>
+            </div>
+            <div class="col-sm-3 text-right">
+                <button class="btn btn-primary">Explore</button>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <p class="panel-body">{{item.description}}</p>
+            <div class="panel-body" [innerHTML]="item.innerHtml">
+
+            </div>
+        </div>
+    </div>
+</div>

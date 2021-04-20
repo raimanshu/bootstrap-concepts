@@ -1,1 +1,52 @@
-<p>To make a div start from next line check it's parents for class row. Otherwise, this div will behave like it's previous sibling.To correct it in the same place we have to give it col-*-*</p>
+<p>-- For bootstrap 3 reference - https://getbootstrap.com/docs/3.4/css/#grid</p>
+
+<p>-- To make a div start from next line check it's parents for class row. Otherwise, this div will behave like it's previous sibling.To correct it in the same place we have to give it col-*-*</p>
+
+<p>-- By befault nature of .row class, It take margin-left: 15px; and margin-right: 15px; It changes the layout width structure. To fix this issue, add a custom class and give it margin: 0;</p>
+
+<p>-- Responsive sequence (Bootstrap 3) - col col-sm col-md col-lg col-xl</p>
+
+<p>-- Media quries to change properties of Responsive sequence (Bootstrap 4)</p>
+// Extra small devices (portrait phones, less than 576px)<br>
+@media (max-width: 575px) {{'{'}}  ... }<br>
+
+// Small devices (landscape phones, 576px and up)<br>
+@media (min-width: 576px) and (max-width: 767px) {{'{'}}  ... }<br>
+
+// Medium devices (tablets, 768px and up)<br>
+@media (min-width: 768px) and (max-width: 991px) {{'{'}}  ... }<br>
+
+// Large devices (desktops, 992px and up)<br>
+@media (min-width: 992px) and (max-width: 1199px) {{'{'}}  ... }<br>
+
+// Extra large devices (large desktops, 1200px and up)<br>
+@media (min-width: 1200px) {{'{'}} ... }<br>
+
+
+<p>-- Responsive sequence (Bootstrap 3) - col-xs col-sm col-md col-lg</p>
+/* Large desktops and laptops */<br>
+@media (min-width: 1200px) {{'{'}} 
+
+}<br>
+
+/* Landscape tablets and medium desktops */<br>
+@media (min-width: 992px) and (max-width: 1199px) {{'{'}} 
+
+}<br>
+
+/* Portrait tablets and small desktops */<br>
+@media (min-width: 768px) and (max-width: 991px) {{'{'}} 
+
+}<br>
+
+/* Landscape phones and portrait tablets */<br>
+@media (max-width: 767px) {{'{'}} 
+
+}<br>
+
+/* Portrait phones and smaller */<br>
+@media (max-width: 480px) {{'{'}} 
+
+} <br>
+
+

@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+
+import { data } from '../../../assets/api-data/dashboard'
 
 @Component({
   selector: 'app-dashboard',
@@ -10,13 +12,21 @@ import { ActivatedRoute } from '@angular/router';
 export class DashboardComponent implements OnInit {
 
   forms = 'forms';
-  constructor(private route: ActivatedRoute) { }
+  dashboardData;
+  constructor(private route: ActivatedRoute) { 
+    console.log(this.dashboardData);
+    this.dashboardData = data;
+  }
 
   ngOnInit(): void {
-    // this.route.fragment.subscribe(f => {
-    //   const element = document.querySelector("#" + f)
-    //   if (element) element.scrollIntoView()
-    // })
+
+  }
+
+  gotoSection(section){
+    const element = document.getElementById(section);
+    if(element){
+      element.scrollIntoView({ behavior: 'smooth', block: "center" });
+    }
   }
 
 }
